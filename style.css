@@ -10,6 +10,11 @@ td {
     padding: 10px;
     border: 1px solid #65ff8b;
     text-align: left;
+    padding: 20px;
+    background-color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: aliceblue;
 }
 
 .group {
@@ -49,4 +54,31 @@ a{
 
 #listText{
     color: white!important;
+}
+
+#NumList{
+    font-size: 16;
+    font-family: 'Courier New', Courier, monospace;
+    color: cadetblue;
+    font-style: normal;        
+}
+ol{
+    list-style-type: lower-latin;
+}
+
+#MarkList{
+    font-size: 16;
+    font-family: 'Courier New', Courier, monospace;
+    color: #80db97;
+    font-style: normal;
+    line-height: 1.5;
+    list-style-type: square;
+}
+
+dl{
+    font-size: 14;
+    font-family: 'Courier New', Courier, monospace;
+    color: #80db97;
+    font-style: italic;
+    line-height: 2;
 }

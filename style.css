@@ -82,3 +82,46 @@ dl{
     font-style: italic;
     line-height: 2;
 }
+
+li p{
+    color: #7595c4;
+    text-decoration: underline;
+}
+
+th p{
+    color: beige;
+    text-decoration: overline underline;
+}
+
+li p{
+    font-size: 16;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: #7595c4;
+}
+
+.newMusicH2{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: #db80b5;
+}
+
+h2 > b {
+    color: #c47575;
+}
+
+#d1 {
+    color: #c47575;
+}
+
+.d2{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal!important;
+    color: rgb(255, 114, 114);
+}
+
+em+em{
+    color: #db80b5;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}

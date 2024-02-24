@@ -125,3 +125,147 @@ em+em{
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#top_ch_h1{
+    text-decoration: none;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24;
+    font: 400;
+    color:rgb(233, 233, 233);
+}
+
+#top_ch_h2 {
+    text-decoration: none;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    font: 400;
+    color: rgb(233, 233, 233);
+}
+
+.button_lxst {
+    width: 33%;
+    flex: 1;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: center;
+}
+.button_lxst button {    
+    text-align: center;
+    padding: 10px 20px;
+    display: inline;
+    width: 80%;
+    font-size: 15px;
+    background-color: rgb(61, 108, 197);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button_lxst button:hover {
+    background-color: #223c8f;
+}
+
+.authors {
+    width: 100%;
+    display: flex;
+}
+
+.button_lxst {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_lxst img {
+    max-width: 100%;
+}
+
+.button_lxst button {
+    width: 100%;
+}
+
+.button_lxst:first-child img{
+    box-shadow: 0 0 50px 0 #ffe65775;
+    border-radius: 5px;
+}
+
+#second_place.button_lxst img {
+    box-shadow: 0 0 50px 0 #6d6d6d96;
+    border-radius: 5px;
+}
+
+#third_place.button_lxst img {
+    box-shadow: 0 0 50px 0 #301306af;
+    border-radius: 5px;
+}
+
+.positioned-block{
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;    
+}
+
+#first_tag.positioned-block{
+    position: absolute;
+    left: 30%;
+    bottom: -152px;
+    color: #ffffff13;    
+}
+#second_tag.positioned-block {
+    position: absolute;
+    left: -10%;
+    bottom:-40px;
+    color: #ffffff13;
+}
+#third_tag.positioned-block {
+    position: absolute;
+    left: 70%;
+    bottom: 70px;
+    color: #ffffff13;
+}
+
+.float-block {
+    float: left;
+    color: #fff;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 160px;
+    background-color: #70707038;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.float-block a:link{
+    color: aliceblue;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.float-block a:visited{
+    color: rgb(109, 109, 109);
+}
+
+.float-block a:hover {
+    color: #00c3ff;
+}
+
+.float-block a:active {
+    color: #6f00ff;
+}
+
+.float-block::after{
+    content: "by @flysoeasy";
+}
+
+.float-block::before{
+    content: "що відбулось?";
+}

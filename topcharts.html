@@ -10,40 +10,58 @@
         body{
             background-color: rgb(26, 26, 26);
         }
-    </style>
-   
+        img{
+            max-width: 500px;
+            max-height: 500px;
+        }
+    </style>   
 </head>
 <body link="blueviolet">
-    <div>
-        <a href="./img/metamorphosis.jpg" target="_blank"><img src="./img/metamorphosis.jpg" alt="meta_interworld" style="width: 10%; height: 10%;"> </a>
-        <img src="./img/metamorphosis.jpg" alt="meta_interworld" style="width: 20%; height: 20%;">
-        <img src="./img/metamorphosis.jpg" alt="meta_interworld" style="width: 40%; height: 40%;">
-        <br>
-        <a href="https://open.spotify.com/track/2ksyzVfU0WJoBpu8otr4pz?si=8081dbbcf12a4b78" target="_blank">Перейти до Spotify..</a>
+    <h1 id="top_ch_h1">Топ-авторів цього тижня:</h1>
+    <div class="authors">
+        <div class="button_lxst">
+            <div class="lxst_avatar">
+                <img src="./img/table_2.jpg" alt="lxst_avatar">
+            </div>
+            <button onclick=""><span>Слухати LXST CXNTURY</span></button>
+        </div>
+        <div class="button_lxst" id="second_place">
+            <div class="lxst_avatar">
+                <img src="./img/dvrst.jpg" alt="dvrst_avatar">
+            </div>
+            <button onclick=""><span>Слухати DVRST</span></button>
+        </div>
+        <div class="button_lxst" id="third_place">
+            <div class="lxst_avatar">
+                <img src="./img/bones.jpg" alt="bones_avatar">
+            </div>
+            <button onclick=""><span>Слухати BONES</span></button>
+        </div>
     </div>
-    <table cellspacing="5" cellpadding="10">
-        <colgroup>
-            <col span="2" class="group">
-        </colgroup>        
-        <tr>
-            <th colspan="3"><p>Top Albums</p></th>
-        </tr>
-        <tr>
-            <td rowspan="2">1</td>
-            <td rowspan="2">Lxst Cxntury - Universe of the Past</td>
-            <td>Odium</td>
-        </tr>
-        <tr>
-            <td>Infinity volume two</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td colspan="2">Interworld - Meta</td>
-        </tr>
-        <tr>
-            <td colspan="2">3</td>
-            <td>KNIGHT - SHADXWBXRN</td>
-        </tr>        
-    </table>
+    <div class="positioned-block" id="first_tag">
+        <img src="./img/141795-picsart-effect-free-hd-image.png" alt="">
+    </div>
+    <div class="positioned-block" id="second_tag">
+        <img src="./img/141795-picsart-effect-free-hd-image.png" alt="">
+    </div>
+    <div class="positioned-block" id="third_tag">
+        <img src="./img/141795-picsart-effect-free-hd-image.png" alt="">
+    </div>
+    <h2 id="top_ch_h2">Новини тижня:</h2>
+    <div class="float-block">
+        <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
+    </div>
+    <div class="float-block">
+        <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
+    </div>
+    <div class="float-block">
+        <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ">Yeat повідомив про старт роботи над новим альбомом</a></p>
+    </div>
+    <div class="float-block">
+        <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2">Новий напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
+    </div>
+    <div class="float-block">
+        <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w">$ucideboy$ повідомили про завершення кар'єри</a></p>
+    </div>
 </body>
 </html>

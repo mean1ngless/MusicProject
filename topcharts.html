@@ -17,6 +17,9 @@
     </style>   
 </head>
 <body link="blueviolet">
+    <button onclick="startMusicDialogue()" id="buttonDialogue">Розпочати діалог</button>
+    <button onclick="Info()" id="buttonInfo">Інформація про розробника</button>
+    <button onclick="rowCheck()" id="buttonRowCheck">Функція порівняння рядків</button>
     <h1 id="top_ch_h1">Топ-авторів цього тижня:</h1>
     <div class="authors">
         <div class="button_lxst">
@@ -37,6 +40,12 @@
             </div>
             <button onclick=""><span>Слухати BONES</span></button>
         </div>
+        <script>
+            let fastQue = confirm("Чи подобається тобі музика?");
+            if(fastQue){
+                alert("Сподіваюсь тобі сподобається на нашому сайті )");
+            }            
+        </script>
     </div>
     <div class="positioned-block" id="first_tag">
         <img src="./img/141795-picsart-effect-free-hd-image.png" alt="">
@@ -49,19 +58,37 @@
     </div>
     <h2 id="top_ch_h2">Новини тижня:</h2>
     <div class="float-block">
-        <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
+        <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw" target="_blank">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
     </div>
     <div class="float-block">
-        <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
+        <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd " target="_blank">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
     </div>
     <div class="float-block">
-        <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ">Yeat повідомив про старт роботи над новим альбомом</a></p>
+        <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ" target="_blank">Yeat повідомив про старт роботи над новим альбомом</a></p>
     </div>
     <div class="float-block">
-        <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2">Новий напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
+        <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2" target="_blank">Новий напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
     </div>
     <div class="float-block">
-        <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w">$ucideboy$ повідомили про завершення кар'єри</a></p>
-    </div>
+        <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w" target="_blank">$ucideboy$ повідомили про завершення кар'єри</a></p>
+    </div> 
+    <script src="dialogue.js"></script>      
+    <script>
+        function startMusicDialogue() {
+            musicDialogue(); // Виклик функції з зовнішнього файлу
+        }
+    </script>
+    <script>
+        function Info(){
+            studentInfo("Василенко", "Дмитро");
+        }
+    </script>
+    <script>
+        function rowCheck(){
+            let row_1 = prompt("Введіть перший рядок:", "А");
+            let row_2 = prompt("Введіть другий рядок:", "А");
+            rowCheckFunc(row_1, row_2);
+        }
+    </script>
 </body>
 </html>

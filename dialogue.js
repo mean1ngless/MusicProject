@@ -33,10 +33,10 @@ function studentInfo(surname, name, jobtitle = "студент") {
 
 function rowCheckFunc(row_1, row_2) {
     if (row_1.toLowerCase() > row_2.toLowerCase()) {
-        alert("Перший рядок більше");
+        alert(`Перший рядок більше: ${row_1}`);
     }
     else if (row_1.toLowerCase() < row_2.toLowerCase()) {
-      alert("Другий рядок більше");
+      alert(`Другий рядок більше: ${row_2}`);
     } else {
       alert("Рядки рівні");
     }

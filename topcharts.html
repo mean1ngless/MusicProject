@@ -20,6 +20,16 @@
     <button onclick="startMusicDialogue()" id="buttonDialogue">Розпочати діалог</button>
     <button onclick="Info()" id="buttonInfo">Інформація про розробника</button>
     <button onclick="rowCheck()" id="buttonRowCheck">Функція порівняння рядків</button>
+    <button onclick="changeColor()" id="buttonColorChange">Змінити колір фону</button>
+    <button onclick="changeLocation()" id="buttonLocationChange">Змінити location</button>
+    <button onclick="FuncGetElement()" id="buttonGetQuery">Дізнатися кількість новин</button>
+    <button onclick="outerInnerFunc()" id="buttonOuterInner">Використання inner + outerHTML</button>
+    <button onclick="usingData()" id="buttonData">Змінити заголовок сторінки</button>   
+    <button onclick="addNewPost()" id="buttonAddPost">Використання document.write</button>
+    <button onclick="create()" id="buttonCreate">Додати нового автора</button>
+    <button onclick="remove()" id="buttonRemove">Видалити останню новину</button>
+    <button onclick="addNewPostCr()" id="buttonAdd">Додати новину</button>
+
     <h1 id="top_ch_h1">Топ-авторів цього тижня:</h1>
     <div class="authors">
         <div class="button_lxst">
@@ -57,21 +67,28 @@
         <img src="./img/141795-picsart-effect-free-hd-image.png" alt="">
     </div>
     <h2 id="top_ch_h2">Новини тижня:</h2>
-    <div class="float-block">
-        <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw" target="_blank">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
+    <div class="news">
+        <div class="float-block">
+            <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw"
+                    target="_blank">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
+        </div>
+        <div class="float-block">
+            <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd "
+                    target="_blank">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
+        </div>
+        <div class="float-block">
+            <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ"
+                    target="_blank">Yeat повідомив про старт роботи над новим альбомом</a></p>
+        </div>
+        <div class="float-block">
+            <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2" target="_blank">Новий
+                    напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
+        </div>
+        <div class="float-block">
+            <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w"
+                    target="_blank">$ucideboy$ повідомили про завершення кар'єри</a></p>
+        </div>
     </div>
-    <div class="float-block">
-        <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd " target="_blank">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
-    </div>
-    <div class="float-block">
-        <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ" target="_blank">Yeat повідомив про старт роботи над новим альбомом</a></p>
-    </div>
-    <div class="float-block">
-        <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2" target="_blank">Новий напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
-    </div>
-    <div class="float-block">
-        <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w" target="_blank">$ucideboy$ повідомили про завершення кар'єри</a></p>
-    </div> 
     <script src="dialogue.js"></script>      
     <script>
         function startMusicDialogue() {
@@ -90,5 +107,99 @@
             rowCheckFunc(row_1, row_2);
         }
     </script>
+    <script>
+        function changeColor(){
+            document.body.style.backgroundColor = 'lightblue';
+            setTimeout(() => document.body.style.background = '', 30000); 
+        }
+    </script>
+    <script>
+        function changeLocation(){
+            location.href = "https://steamcommunity.com/id/flysoeasy/";
+        }
+    </script>
+    <script>
+        function FuncGetElement(){
+            elem = document.getElementById("buttonColorChange");
+            elem.style.backgroundColor = "rgb(197, 100, 61)";
+
+            elements = document.querySelectorAll(".float-block");
+            alert(`Кількість елементів з класом float-block: ${elements.length}`)
+        }
+    </script>
+    <script>
+        function outerInnerFunc(){
+            element = document.querySelector(".positioned-block");
+            console.log(element.outerHTML);
+
+            button = document.getElementById("buttonOuterInner");
+            button.innerHTML = "Використали"
+        }
+    </script>
+    <script>
+        function usingData(){
+            var h1Element = document.getElementById("top_ch_h1");
+            h1Element.firstChild.data = "Підібрали для тебе авторів цього тижня:";
+        }
+
+        function addNewPost(){
+            document.open();
+            document.write(`<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4gB8KsrAQcmbokcfOIs5oF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`)
+            document.close();
+        }
+
+        function create(){
+            // Створюємо новий елемент div з класом "button_lxst"
+            let newAuthorDiv = document.createElement("div");
+            newAuthorDiv.className = "button_lxst";
+
+            // Створюємо новий елемент img для аватара
+            let newAuthorAvatar = document.createElement("img");
+            newAuthorAvatar.src = "./img/new_author_avatar.jpg";
+            newAuthorAvatar.alt = "new_author_avatar";
+
+            // Створюємо новий елемент button для кнопки
+            let newAuthorButton = document.createElement("button");
+            newAuthorButton.onclick = function () {
+                // Дія при кліку на кнопку
+            };
+            let buttonText = document.createTextNode("Слухати Lil Uzi Vert");
+            newAuthorButton.append(buttonText);
+
+            // Додаємо створені елементи в нового автора
+            newAuthorDiv.append(newAuthorAvatar);
+            newAuthorDiv.append(newAuthorButton);
+
+            // Знаходимо елемент, до якого хочемо додати нового автора
+            let authorsContainer = document.querySelector(".authors");
+                        
+            // Видаляємо елемент з id "third_place"
+            let thirdPlaceAuthor = document.getElementById("third_place");
+            thirdPlaceAuthor.replaceWith(newAuthorDiv);
+        }
+
+        function remove(){
+            let news = document.querySelectorAll(".float-block");
+            let last_post = news[news.length - 1];
+            last_post.remove();
+        }
+
+        function addNewPostCr(){
+            let newsPosts = document.querySelectorAll(".float-block");
+            let last_post = newsPosts[newsPosts.length-1];
+
+            let newPostDiv = document.createElement("div");
+            newPostDiv.className = "float-block";
+
+            let newPostText = document.createElement("p");
+            let postText = document.createTextNode("Lil Uzi Vert зробив..");
+            newPostText.append(postText);
+            newPostDiv.append(newPostText);
+
+            
+            last_post.after(newPostDiv);
+        }
+    </script>
+
 </body>
 </html>

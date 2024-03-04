@@ -135,7 +135,7 @@ em+em{
     color:rgb(233, 233, 233);
 }
 
-#top_ch_h2 {
+.top_ch_h2 {
     text-decoration: none;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
@@ -166,7 +166,10 @@ em+em{
     transition: background-color 0.3s ease;
 }
 
-#buttonDialogue, #buttonInfo, #buttonRowCheck, #buttonColorChange, #buttonLocationChange, #buttonGetQuery, #buttonOuterInner, #buttonData, #buttonAddPost, #buttonCreate, #buttonRemove, #buttonAdd{
+#buttonDialogue, #buttonInfo, #buttonRowCheck, #buttonColorChange, 
+#buttonLocationChange, #buttonGetQuery, #buttonOuterInner, 
+#buttonData, #buttonAddPost, #buttonCreate, #buttonRemove, 
+#buttonAdd, #buttonMouseClick, #buttonMouseClick2{
     text-align: center;
     padding: 10px 20px;
     display: inline;
@@ -253,7 +256,7 @@ em+em{
     font-style: normal;
     font-family: 'Courier New', Courier, monospace;
     width: 200px;
-    height: 160px;
+    height: 230px;
     background-color: #70707038;
     margin-left: 20px;
     padding: 5px;
@@ -284,4 +287,34 @@ em+em{
 
 .float-block::before{
     content: "що відбулось?";
+}
+
+.music-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.music-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.highlighted{
+    color: white;
+}
+
+.menu-btn{
+    margin: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18;
+    border-radius: 24px;
+    width: 150px;
+    height: 40px;
+    border-color: #00c3ff;
+    color: white;
+    background: transparent;
 }

@@ -14,6 +14,15 @@
             max-width: 500px;
             max-height: 500px;
         }
+        .lxst_avatar{
+            width: 400px;
+            height: 400px;
+            transition: 1s ease;
+        }
+        .lxst_avatar:hover{
+            width: 500px;
+            height: 500px;
+        }
     </style>   
 </head>
 <body link="blueviolet">
@@ -34,27 +43,41 @@
 
     <h1 id="top_ch_h1">Топ-авторів цього тижня:</h1>
     <div class="authors">
-        <div class="button_lxst">
+        <div class="button_lxst" onmouseover="highlight(event)" onmouseout="removeHighlight(event)">
             <div class="lxst_avatar">
                 <img src="./img/table_2.jpg" alt="lxst_avatar">
             </div>
             <button id="listen_lxst" onclick="listen_lxst()"><span>Слухати LXST CXNTURY</span></button>
         </div>
-        <div class="button_lxst" id="second_place">
+        <div class="button_lxst" id="second_place" onmouseover="highlight(event)" onmouseout="removeHighlight(event)">
             <div class="lxst_avatar">
                 <img src="./img/dvrst.jpg" alt="dvrst_avatar">
             </div>
             <button id="listen_dvrst" onclick="listen_dvrst()"><span>Слухати DVRST</span></button>
         </div>
-        <div class="button_lxst" id="third_place">
+        <div class="button_lxst" id="third_place" onmouseover="highlight(event)" onmouseout="removeHighlight(event)">
             <div class="lxst_avatar">
                 <img src="./img/bones.jpg" alt="bones_avatar">
             </div>
             <button id="listen_bones" onclick="listen_bones()"><span>Слухати BONES</span></button>
         </div>
         <script>
+            function highlight(event) {
+                var target = event.target;
+                if (target.tagName === 'IMG') {
+                    target.parentNode.classList.add('highlight');
+                }
+            }
+
+            function removeHighlight(event) {
+                var target = event.target;
+                if (target.tagName === 'IMG') {
+                    target.parentNode.classList.remove('highlight');
+                }
+            }
+
             let fastQue = confirm("Чи подобається тобі музика?");
-            if(fastQue){
+            if (fastQue) {
                 alert("Сподіваюсь тобі сподобається на нашому сайті )");
             }            
         </script>
@@ -79,29 +102,29 @@
 
     <h2 class="top_ch_h2">Новини тижня:</h2>
     <div class="news">
-        <div class="float-block">
+        <div class="float-block" draggable="true">
             <p><a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?si=UM6SmNKUTQKm3YJygkDyRw"
                     target="_blank">Вийшов альбом Currents - виконавець Tame - Impala</a></p>
                     <p data-time="time_info" style="color: rgba(148, 148, 148, 0.692);">Показати час новини</p>
                     <p id="time_info" hidden>12:20 AM</p>
         </div>
-        <div class="float-block">
+        <div class="float-block" draggable="true">
             <p><a href="https://open.spotify.com/playlist/37i9dQZEVXbKkidEfWYRuD?si=65bd2f41851446cd "
                     target="_blank">Виконавець shadowraze посів 17 місце у топі України за прослуховуваннями</a></p>
         </div>
-        <div class="float-block">
+        <div class="float-block" draggable="true">
             <p><a href="https://open.spotify.com/album/7aUeYDjGYo8wMKcpeGFRbg?si=MkUr-wCHTSCcqha1ODTTXQ"
                     target="_blank">Yeat повідомив про старт роботи над новим альбомом</a></p>
         </div>
-        <div class="float-block">
+        <div class="float-block" draggable="true">
             <p><a href="https://open.spotify.com/playlist/37i9dQZF1DWWY64wDtewQt?si=71a7e5b948f24dd2" target="_blank">Новий
                     напрямок PHONK стрімко набирає оберти та "захоплює" серця людей</a></p>
         </div>
-        <div class="float-block">
+        <div class="float-block" draggable="true">
             <p><a href="https://open.spotify.com/artist/1VPmR4DJC1PlOtd0IADAO0?si=A0-tLuTqSiu0ixJhvUYH5w"
                     target="_blank">$ucideboy$ повідомили про завершення кар'єри</a></p>
         </div>
-        <div class="float-block" style="height: 300px;">
+        <div class="float-block" style="height: 300px;" draggable="true">
             <p>
                 Критики зробили рейтинг пісень Tame Impala
                 <ul id="musicList" style="color: black;">
@@ -112,8 +135,88 @@
                     <li>Eventually</li>
                 </ul>
             </p>
+        </div>        
+    </div> 
+    <div class="clearfix"></div>
+    <h2 class="top_ch_h2">Інтерактив:</h2>
+    <div class="pazzles" style="height: 400px">
+        <div class="pazl">
+            <img src="./paz/1.png" alt="">
         </div>
-    </div>    
+        <div class="pazl">
+            <img src="./paz/3.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/5.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/6.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/11.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/7.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/4.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/2.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/8.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/10.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/12.png" alt="">
+        </div>
+        <div class="pazl">
+            <img src="./paz/9.png" alt="">
+        </div>
+        <script>
+            let blocks = document.querySelectorAll('.pazl');
+
+            blocks.forEach(function (block) {
+                block.addEventListener('mousedown', function (event) {
+                    let shiftX = event.clientX - block.getBoundingClientRect().left;
+                    let shiftY = event.clientY - block.getBoundingClientRect().top;
+                    block.style.zIndex = 1000;
+                    block.style.position = 'absolute';
+
+                    moveAt(event.pageX, event.pageY);
+
+                    function moveAt(pageX, pageY) {
+                        block.style.left = pageX - shiftX + 'px';
+                        block.style.top = pageY - shiftY + 'px';
+                    }
+
+                    function onMouseMove(event) {
+                        moveAt(event.pageX, event.pageY);
+                    }
+
+                    document.addEventListener('mousemove', onMouseMove);
+
+                    block.addEventListener('mouseup', function () {
+                        document.removeEventListener('mousemove', onMouseMove);
+                        block.removeEventListener('mouseup', onMouseUp);
+                    });
+
+                    function onMouseUp() {
+                        document.removeEventListener('mousemove', onMouseMove);
+                        block.removeEventListener('mouseup', onMouseUp);
+                    }
+
+                    // Отключаем встроенное перетаскивание элемента браузером
+                    block.ondragstart = function () {
+                        return false;
+                    };
+                });
+            });
+        </script>
+    </div>  
     <script src="dialogue.js"></script>
 </body>
 </html>

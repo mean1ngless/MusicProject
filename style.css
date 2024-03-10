@@ -211,17 +211,14 @@ em+em{
 }
 
 .button_lxst:first-child img{
-    box-shadow: 0 0 50px 0 #ffe65775;
     border-radius: 5px;
 }
 
 #second_place.button_lxst img {
-    box-shadow: 0 0 50px 0 #6d6d6d96;
     border-radius: 5px;
 }
 
 #third_place.button_lxst img {
-    box-shadow: 0 0 50px 0 #301306af;
     border-radius: 5px;
 }
 
@@ -261,6 +258,7 @@ em+em{
     margin-left: 20px;
     padding: 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .float-block a:link{
@@ -317,4 +315,20 @@ em+em{
     border-color: #00c3ff;
     color: white;
     background: transparent;
+}
+
+.highlight {
+    border-radius: 5px;
+    box-shadow: 0 0 50px 0 #ffffff7a;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pazl{
+    padding: 5px;
+    float: left;
+    cursor: pointer;
 }

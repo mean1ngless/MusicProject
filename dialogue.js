@@ -150,7 +150,7 @@ function addNewPostCr() {
 
   let newPostDiv = document.createElement("div");
   newPostDiv.className = "float-block";
-
+  newPostDiv.draggable = true;
   let newPostText = document.createElement("p");
   let postText = document.createTextNode("Lil Uzi Vert зробив..");
   newPostText.append(postText);
